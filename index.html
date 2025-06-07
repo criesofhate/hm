@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .photo {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.2rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>My Minimalist Photo Gallery</header>
+
+  <div class="container">
+    <div class="photo">
+      <img src="https://source.unsplash.com/random/800x1000?sig=1" alt="Photo 1">
+    </div>
+    <div class="photo">
+      <img src="https://source.unsplash.com/random/800x1200?sig=2" alt="Photo 2">
+    </div>
+    <div class="photo">
+      <img src="https://source.unsplash.com/random/800x900?sig=3" alt="Photo 3">
+    </div>
+    <div class="photo">
+      <img src="https://source.unsplash.com/random/800x1100?sig=4" alt="Photo 4">
+    </div>
+    <!-- Add more <div class="photo"> blocks as needed -->
+  </div>
+
+</body>
+</html>
